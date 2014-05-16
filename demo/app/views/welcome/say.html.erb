@@ -1,0 +1,56 @@
+<style type="text/css">
+	body {
+		margin: 0px;
+		padding: 0px;
+		font: 14px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+		line-height: 1;
+		background-color: #fff;
+	}
+	.desc {
+		width: 960px;
+		height: auto;
+		border:1px solid #AAAAAA;
+		margin: 0px auto;
+		font-size: 20px;
+		text-align: center;
+	}
+	.desc h1 {
+		background-color: #AAA;
+		line-height: 60px;
+		margin 10px 10px 0px 10px;
+	}
+	ul {
+		margin: 0px;
+		padding: 0px;
+		margin-top: 20px;
+	}
+	ul li {
+		list-style: none;
+		border-bottom:1px solid #F1F1F1;
+		text-align: left;
+		height: 40px;
+		line-height: 40px;
+		padding-left: 20px;
+	}
+</style>
+<div class="desc">
+	<h1>rails4.0 demo</h1>
+	<span>it's my first rails4.0 app!</span>
+	<ul>
+		<li>1.this is first line.</li>
+		<li>2.this is second line.</li>
+		<li>3.<a href="http://rvm.io" target="_blank">rvm.io</a></li>
+		<li>4.TDD.</li>
+		<li>5.hello rails! It's <%= Time.now %></li>
+		<li>
+			6.my name is <%= @user[:username] %>,
+			<%= @user[:info] %>
+		</li>
+		<li>
+			7.
+			<% for i in 0..@user[:username].length do %>
+				<%= @user[:username][i] %>
+			<% end %>
+		</li>
+	</ul>
+</div>
